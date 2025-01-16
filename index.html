@@ -10,8 +10,11 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
            <a-marker type="pattern" url="./target/number_43.patt">
+		<a-assets>
+        <img id="dibujo" src="./models/dibujo2d.jpg"/>
+      </a-assets>
 	       <a-entity 
-		<a-plane="./models/dibujo2d.jpg" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+		<a-plane src="#dibujo" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
 	    gltf-model="./models/ensamble.gltf" rotation="-50 0 0 " position="0 0 0" scale="0.1 0.1 0.1">
                </a-entity> 
 	   </a-marker> 
